@@ -69,6 +69,8 @@ npx playwright test
 GitHub Actions により Push ごとに自動でテストを実行します。
 Playwright HTML レポートは GitHub Pages からオンラインで確認できます。
 
+**HTML Report:** https://naomimiyake.github.io/playwright-assignment/
+
 ---
 
 ## 設計方針
@@ -152,6 +154,8 @@ npx playwright test
 ## CI / GitHub Actions
 Tests are automatically executed on every push using GitHub Actions.
 The Playwright HTML report is published online through GitHub Pages.
+
+**HTML Report:** https://naomimiyake.github.io/playwright-assignment/
 
 ---
 
