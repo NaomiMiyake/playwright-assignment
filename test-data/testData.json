@@ -1,0 +1,23 @@
+[
+  {
+    "testId": "TC001",
+    "title": "正常ログイン / Valid login",
+    "username": "student",
+    "password": "Password123",
+    "expected": "success"
+  },
+  {
+    "testId": "TC002",
+    "title": "パスワード不正 / Invalid password",
+    "username": "student",
+    "password": "wrong",
+    "expected": "NG"
+  },
+  {
+    "testId": "TC003",
+    "title": "ユーザー名未入力 / Empty username",
+    "username": "",
+    "password": "Password123",
+    "expected": "failure"
+  }
+]

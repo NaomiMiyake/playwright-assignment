@@ -1,0 +1,14 @@
+{
+  "name": "playwright-assignment",
+  "version": "1.0.0",
+  "description": "UI test automation using Playwright and TypeScript.",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2"
+  }
+}
