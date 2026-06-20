@@ -4,6 +4,11 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -20,7 +25,7 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run playwright tests
+      - name: Run Playwright tests
         run: npx playwright test
 
       - name: Upload Playwright report
@@ -37,3 +42,21 @@ jobs:
           name: test-results
           path: test-results/
           if-no-files-found: ignore
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        if: always()
+        with:
+          path: playwright-report/
+
+  deploy-report:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+
+    steps:
+      - name: Deploy Playwright report to GitHub Pages
+        uses: actions/deploy-pages@v4
