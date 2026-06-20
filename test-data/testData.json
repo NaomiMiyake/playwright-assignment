@@ -11,7 +11,7 @@
     "title": "パスワード不正 / Invalid password",
     "username": "student",
     "password": "wrong",
-    "expected": "NG"
+    "expected": "failure"
   },
   {
     "testId": "TC003",
