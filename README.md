@@ -22,11 +22,11 @@ https://practicetestautomation.com/practice-test-login/
 ---
 
 ## 手動テストケース
-| Test ID | 説明 | 期待結果 |
-|---------|-----|---------|
-| TC001 | 正常ログイン | ログイン成功 |
-| TC002 | パスワード不正 | エラーメッセージ表示 |
-| TC003 | ユーザー名未入力 | バリデーションまたはエラーメッセージ表示 |
+| Test ID | テスト観点 | 手順 | 期待結果 |
+|---------|------------|------|----------|
+| TC001 | 正常ログイン | 有効なユーザー名とパスワードを入力し、Submitをクリックする | ログイン成功画面が表示される |
+| TC002 | 認証エラー | 有効なユーザー名と不正なパスワードを入力し、Submitをクリックする | エラーメッセージが表示される |
+| TC003 | 入力チェック | ユーザー名を未入力、パスワードを入力し、Submitをクリックする | バリデーションまたはエラーメッセージが表示される |
 
 ---
 
@@ -108,11 +108,11 @@ https://practicetestautomation.com/practice-test-login/
 ---
 
 ## Manual Test Cases
-| Test ID | Description | Expected Result |
-|---------|-------------|----------------|
-| TC001 | Valid login | Login succeeds |
-| TC002 | Invalid password | Error message is displayed |
-| TC003 | Empty username | Validation or error message is displayed |
+| Test ID | Test Point | Steps | Expected Result |
+|---------|------------|-------|-----------------|
+| TC001 | Valid login | Enter a valid username and password, then click Submit | The login success page is displayed |
+| TC002 | Authentication error | Enter a valid username and an invalid password, then click Submit | An error message is displayed |
+| TC003 | Input validation | Leave the username empty, enter a password, then click Submit | A validation or error message is displayed |
 
 ---
 
