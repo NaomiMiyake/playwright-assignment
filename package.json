@@ -5,10 +5,18 @@
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "lint": "npx eslint ",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.2"
+    "@types/node": "^25.9.2",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.4",
+    "typescript-eslint": "^8.62.1"
   }
 }

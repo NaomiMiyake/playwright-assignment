@@ -3,18 +3,18 @@ import { LoginPage } from '../pages/LoginPage';
 import { SecureAreaPage } from '../pages/SecureAreaPage';
 
 type MyFixtures = {
-    loginPage: LoginPage;
-    secureAreaPage: SecureAreaPage;
+  loginPage: LoginPage;
+  secureAreaPage: SecureAreaPage;
 };
 
 export const test = base.extend<MyFixtures>({
-    loginPage: async ({ page }, use) => {
-        await use(new LoginPage(page));
-    },
+  loginPage: async ({ page }, use) => {
+    await use(new LoginPage(page));
+  },
 
-    secureAreaPage: async ({ page }, use) => {
-        await use(new SecureAreaPage(page));
-    },
+  secureAreaPage: async ({ page }, use) => {
+    await use(new SecureAreaPage(page));
+  },
 });
 
 export { expect } from '@playwright/test';
